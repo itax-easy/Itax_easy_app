@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class CustomIconButton extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   final String text;
-  final IconData icon;
   final VoidCallback onPressed;
+  final Color? color; // Optional color parameter
+  final IconData? icon; // Optional icon parameter
 
-  const CustomIconButton({
+  const CustomButton({
     Key? key,
     required this.text,
-    required this.icon,
     required this.onPressed,
+    this.color, // Optional color
+    this.icon, // Optional icon
   }) : super(key: key);
 
   @override
@@ -17,28 +19,26 @@ class CustomIconButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        padding: const EdgeInsets.all(14),
+        width: 327,
+        height: 49.60,
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: ShapeDecoration(
-          color: const Color(0xFF3C7CDD), // Primary color
+          color: color ?? const Color(0xFF3C7CDD), // Default blue color
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(12),
           ),
           shadows: [
             BoxShadow(
-              color: Color(0xB2002660),
-              blurRadius: 10,
-              offset: Offset(0, 0),
+              color: const Color(0xB2002660),
+              blurRadius: 6,
+              offset: const Offset(0, 0),
               spreadRadius: 0,
             ),
           ],
         ),
         child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, color: Colors.white),
-            const SizedBox(width: 6), // Spacing between icon and text
             Text(
               text,
               style: const TextStyle(
@@ -48,6 +48,10 @@ class CustomIconButton extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
+            if (icon != null) ...[
+              const SizedBox(width: 8), // Spacing between text and icon
+              Icon(icon, color: Colors.white, size: 20),
+            ],
           ],
         ),
       ),

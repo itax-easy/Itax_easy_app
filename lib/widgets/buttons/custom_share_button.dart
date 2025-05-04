@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class CustomIconButton extends StatelessWidget {
+class CustomShareButton extends StatelessWidget {
   final String text;
-  final IconData icon;
   final VoidCallback onPressed;
+  final Color? color; // Optional color for customization
 
-  const CustomIconButton({
+  const CustomShareButton({
     Key? key,
     required this.text,
-    required this.icon,
     required this.onPressed,
+    this.color, // Optional color
   }) : super(key: key);
 
   @override
@@ -17,35 +17,42 @@ class CustomIconButton extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        padding: const EdgeInsets.all(14),
+        padding: const EdgeInsets.symmetric(horizontal: 41, vertical: 10),
         decoration: ShapeDecoration(
-          color: const Color(0xFF3C7CDD), // Primary color
+          color: color ?? const Color(0xFF3C7CDD), // Default blue color
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30),
-          ),
-          shadows: [
-            BoxShadow(
-              color: Color(0xB2002660),
-              blurRadius: 10,
-              offset: Offset(0, 0),
-              spreadRadius: 0,
+            side: BorderSide(
+              width: 1,
+              color: color ?? const Color(0xFF3C7CDD), // Default blue color
             ),
-          ],
+            borderRadius: BorderRadius.circular(8),
+          ),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(icon, color: Colors.white),
+            Container(
+              width: 24,
+              height: 24,
+              clipBehavior: Clip.antiAlias,
+              decoration: const BoxDecoration(),
+              child: const Icon(
+                Icons.share, // Share icon
+                color: Colors.white,
+              ),
+            ),
             const SizedBox(width: 6), // Spacing between icon and text
             Text(
               text,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 16,
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.w500,
+                height: 1.50,
               ),
             ),
           ],
