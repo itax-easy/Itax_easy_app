@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:itax_easy_app/test_screen.dart';
-import 'package:itax_easy_app/widgets/custom_nav.dart';
+import 'package:itax_easy_app/views/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: CustomNavigationBar(),
+      home: MainScreen(),
     );
   }
 }

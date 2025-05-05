@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/widgets/buttons/custom_clear_calculate_button.dart';
 import 'package:itax_easy_app/widgets/buttons/custom_sreach_cancal_button.dart';
-import 'package:itax_easy_app/widgets/custom_nav.dart';
 
 class TestScreen extends StatelessWidget {
   const TestScreen({super.key});
@@ -33,7 +32,6 @@ class TestScreen extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: CustomNavigationBar(),
     );
   }
 }
