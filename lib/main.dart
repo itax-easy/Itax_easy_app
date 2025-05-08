@@ -13,6 +13,11 @@ import 'package:itax_easy_app/views/screens/calculators/investment%20calculators
 import 'package:itax_easy_app/views/screens/calculators/investment%20calculators/SIP_calculator_screen.dart';
 import 'package:itax_easy_app/views/screens/calculators/investment%20calculators/lump_sum_calculator_screen.dart';
 import 'package:itax_easy_app/views/screens/calculators/investment%20calculators/post_office_MIS_calculator.dart';
+import 'package:itax_easy_app/views/screens/calculators/loan%20Caculators/business_loan_calculator_screen.dart';
+import 'package:itax_easy_app/views/screens/calculators/loan%20Caculators/car_loan_calculator_screen.dart';
+import 'package:itax_easy_app/views/screens/calculators/loan%20Caculators/home_loan_calculator_screen.dart';
+import 'package:itax_easy_app/views/screens/calculators/loan%20Caculators/loan_against_property_calcultor.dart';
+import 'package:itax_easy_app/views/screens/calculators/loan%20Caculators/personal_loan_calculator_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +34,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SIPCalculatorScreen(),
+      home: PersonalLoanCalculatorScreen(),
     );
   }
 }

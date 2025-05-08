@@ -13,8 +13,6 @@ class ToolsScreen extends StatefulWidget {
 }
 
 class _ToolsScreenState extends State<ToolsScreen> {
-  String _selectedCalculator = 'Tools'; // Default app bar title
-
   void _showBottomSheet(
     BuildContext context,
     String title,
