@@ -41,11 +41,11 @@ class _SelectTimeDropdownState extends State<SelectTimeDropdown> {
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             width: 128,
-            height: 44,
+            height: 54,
             decoration: BoxDecoration(
               color: Colors.white,
-              border: Border.all(color: Colors.black),
-              borderRadius: BorderRadius.circular(5),
+              border: Border.all(color: Colors.black54),
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,

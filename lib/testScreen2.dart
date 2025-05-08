@@ -13,7 +13,7 @@ class TestScreen2 extends StatefulWidget {
 class _TestScreen2State extends State<TestScreen2> {
   int _selectedIndex = 0; // Default selected tab index
   final List<String> _titles = [
-    "Home",
+    "Home2",
     "Tools",
     "Blogs",
     "More",
@@ -21,7 +21,7 @@ class _TestScreen2State extends State<TestScreen2> {
 
   // List of widgets for each tab
   final List<Widget> _screens = [
-    const Center(child: Text("Home Screen", style: TextStyle(fontSize: 24))),
+    const Center(child: Text("Home 2 Screen", style: TextStyle(fontSize: 24))),
     ToolPage(),
     const Center(child: Text("Blogs Screen", style: TextStyle(fontSize: 24))),
     const Center(child: Text("More Screen", style: TextStyle(fontSize: 24))),
@@ -43,6 +43,7 @@ class _TestScreen2State extends State<TestScreen2> {
       ),
       body: _screens[_selectedIndex], // Display the selected screen
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.blue,
         currentIndex: _selectedIndex, // Highlight the selected tab
         onTap: _onItemTapped, // Handle tab selection
         type: BottomNavigationBarType.fixed, // Fixed navigation bar

@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:itax_easy_app/views/screens/simple_intrest_calculator.dart';
 import 'package:itax_easy_app/widgets/custom/calculator_card.dart';
 
-class ToolsScreen extends StatelessWidget {
-  const ToolsScreen({super.key});
+class ToolsScreen extends StatefulWidget {
+  const ToolsScreen({
+    super.key,
+    required Null Function(dynamic calculator) onCalculatorSelected,
+  });
+
+  @override
+  State<ToolsScreen> createState() => _ToolsScreenState();
+}
+
+class _ToolsScreenState extends State<ToolsScreen> {
+  String _selectedCalculator = 'Tools'; // Default app bar title
 
   void _showBottomSheet(
     BuildContext context,
@@ -42,12 +53,22 @@ class ToolsScreen extends StatelessWidget {
               const SizedBox(height: 16),
               ...items.map((item) {
                 return Card(
+                  elevation: 4, // Adds shadow to the card
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8), // Rounded corners
+                  ),
                   child: ListTile(
                     title: Text(item['title']),
                     trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                     onTap: () {
                       Navigator.pop(context); // Close the bottom sheet
-                      print('${item['title']} Clicked');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder:
+                              (context) => SimpleInterestCalculatorScreen(),
+                        ),
+                      );
                     },
                   ),
                 );
@@ -62,7 +83,6 @@ class ToolsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Tools'), centerTitle: true),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.count(
