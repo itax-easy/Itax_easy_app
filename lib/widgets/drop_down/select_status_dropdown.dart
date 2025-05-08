@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class TaxPayerdropdown extends StatefulWidget {
+class SelectStatusdropdown extends StatefulWidget {
   final double? width;
   final double? height;
   final String initialValue;
   final ValueChanged<String> onChanged;
 
-  const TaxPayerdropdown({
+  const SelectStatusdropdown({
     Key? key,
     required this.initialValue,
     this.height,
@@ -15,21 +15,11 @@ class TaxPayerdropdown extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<TaxPayerdropdown> createState() => _TaxPayerdropdownState();
+  State<SelectStatusdropdown> createState() => _SelectStatusdropdownState();
 }
 
-class _TaxPayerdropdownState extends State<TaxPayerdropdown> {
-  final List<String> taxTypes = [
-    'select',
-    'Individual',
-    'HUF (Hindi undivided family)',
-    'AOP/BOI',
-    'Foreign Company',
-    'Firms',
-    'LLP',
-    'Co-operative Society',
-  ];
-
+class _SelectStatusdropdownState extends State<SelectStatusdropdown> {
+  List<String> status = ['Resident', 'Non Resident', 'Ordinary Resident'];
   late String selectedValue;
   bool dropdownOpened = false;
   final LayerLink _layerLink = LayerLink();
@@ -93,7 +83,7 @@ class _TaxPayerdropdownState extends State<TaxPayerdropdown> {
                     padding: EdgeInsets.zero,
                     shrinkWrap: true,
                     children:
-                        taxTypes.map((item) {
+                        status.map((item) {
                           bool isSelected = item == selectedValue;
                           return Container(
                             color:
@@ -163,3 +153,10 @@ class _TaxPayerdropdownState extends State<TaxPayerdropdown> {
     );
   }
 }
+
+
+
+
+
+
+ // SelectStatusdropdown

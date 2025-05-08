@@ -3,14 +3,14 @@ import 'package:itax_easy_app/widgets/buttons/custom_clear_calculate_button.dart
 import 'package:itax_easy_app/widgets/drop_down/select_time_dropdown.dart';
 import 'package:itax_easy_app/widgets/inputs/CustomTextField.dart';
 
-class TestScreen2 extends StatefulWidget {
-  const TestScreen2({super.key});
+class TestScreen extends StatefulWidget {
+  const TestScreen({super.key});
 
   @override
-  State<TestScreen2> createState() => _TestScreen2State();
+  State<TestScreen> createState() => _TestScreenState();
 }
 
-class _TestScreen2State extends State<TestScreen2> {
+class _TestScreenState extends State<TestScreen> {
   int _selectedIndex = 0; // Default selected tab index
   final List<String> _titles = [
     "Home",
