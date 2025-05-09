@@ -1,7 +1,7 @@
 name: itax_easy_app
 description: "A new Flutter project."
 
-publish_to: 'none' 
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  pie_chart: ^5.4.0
   fl_chart: ^0.71.0
-  syncfusion_flutter_gauges: ^29.1.41
 
 dev_dependencies:
   flutter_test:
@@ -38,4 +38,3 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  

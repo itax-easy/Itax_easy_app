@@ -116,18 +116,7 @@ class _ToolsScreenState extends State<ToolsScreen> {
                 ]);
               },
             ),
-            // GST Calculator
-            CalculatorCard(
-              icon: Icons.receipt_long,
-              iconColor: Colors.red,
-              title: 'GST\nCalculator',
-              onTap: () {
-                _showBottomSheet(context, 'GST Calculators', [
-                  {'title': 'GST Input Calculator'},
-                  {'title': 'GST Output Calculator'},
-                ]);
-              },
-            ),
+
             // Investment Calculator
             CalculatorCard(
               icon: Icons.show_chart,
