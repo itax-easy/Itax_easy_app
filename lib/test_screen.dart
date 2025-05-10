@@ -8,6 +8,7 @@ import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 import 'package:itax_easy_app/utils/custom/custom_nav.dart';
 
 import 'utils/buttons/clear_calculate_button.dart';
+import 'utils/custom/custom_dropdown.dart';
 
 class HalfPieChart extends StatefulWidget {
   HalfPieChart({super.key});
@@ -43,8 +44,24 @@ class _HalfPieChartState extends State<HalfPieChart> {
             ),
           ),
           Center(child: SvgPicture.asset(Assets.icons.calculator)),
-          Spacer(),
+          CustomDropdown(
+            initialValue: 'select',
+            onChanged: (String value) {},
+            items: [
+              'select',
+              'Individual',
+              'HUF (Hindi undivided family)',
+              'AOP/BOI',
+              'Foreign Company',
+              'Firms',
+              'LLP',
+              'Co-operative Society',
+            ],
+            width: 400,
+          ),
+
           SearchCancelButton(onSearchPressed: () {}, onCancelPressed: () {}),
+
           ClearCalculateButtons(
             onClearPressed: () {},
             onCalculatePressed: () {},
