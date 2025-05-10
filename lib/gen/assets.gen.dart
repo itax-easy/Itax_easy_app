@@ -13,6 +13,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Add_Details.svg
   String get addDetails => 'assets/icons/Add_Details.svg';
 
+  /// File path: assets/icons/Barcode copy.svg
+  String get barcodeCopy => 'assets/icons/Barcode copy.svg';
+
   /// File path: assets/icons/Barcode.svg
   String get barcode => 'assets/icons/Barcode.svg';
 
@@ -49,6 +52,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Help.svg
   String get help => 'assets/icons/Help.svg';
 
+  /// File path: assets/icons/Home.svg
+  String get home => 'assets/icons/Home.svg';
+
   /// File path: assets/icons/IT_Cal.svg
   String get iTCal => 'assets/icons/IT_Cal.svg';
 
@@ -66,6 +72,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/PDF.svg
   String get pdf => 'assets/icons/PDF.svg';
+
+  /// File path: assets/icons/Parties.svg
+  String get parties => 'assets/icons/Parties.svg';
 
   /// File path: assets/icons/Payment.svg
   String get payment => 'assets/icons/Payment.svg';
@@ -114,6 +123,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/bill.svg
   String get bill => 'assets/icons/bill.svg';
+
+  /// File path: assets/icons/blogs.svg
+  String get blogs => 'assets/icons/blogs.svg';
 
   /// File path: assets/icons/calculator.svg
   String get calculator => 'assets/icons/calculator.svg';
@@ -170,6 +182,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/invoice.svg
   String get invoice => 'assets/icons/invoice.svg';
 
+  /// File path: assets/icons/items 1.svg
+  String get items1 => 'assets/icons/items 1.svg';
+
   /// File path: assets/icons/itr.svg
   String get itr => 'assets/icons/itr.svg';
 
@@ -190,6 +205,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/material-symbols_share.svg
   String get materialSymbolsShare => 'assets/icons/material-symbols_share.svg';
 
+  /// File path: assets/icons/more.svg
+  String get more => 'assets/icons/more.svg';
+
   /// File path: assets/icons/ocr.svg
   String get ocr => 'assets/icons/ocr.svg';
 
@@ -208,6 +226,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/receipt.svg
   String get receipt => 'assets/icons/receipt.svg';
 
+  /// File path: assets/icons/reports 1.svg
+  String get reports1 => 'assets/icons/reports 1.svg';
+
   /// File path: assets/icons/sales.svg
   String get sales => 'assets/icons/sales.svg';
 
@@ -216,6 +237,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/scan.svg
   String get scan => 'assets/icons/scan.svg';
+
+  /// File path: assets/icons/services.svg
+  String get services => 'assets/icons/services.svg';
 
   /// File path: assets/icons/settings.svg
   String get settings => 'assets/icons/settings.svg';
@@ -232,6 +256,7 @@ class $AssetsIconsGen {
   /// List of all assets
   List<String> get values => [
     addDetails,
+    barcodeCopy,
     barcode,
     businessProfile,
     call,
@@ -244,12 +269,14 @@ class $AssetsIconsGen {
     expenses,
     gSPSetup,
     help,
+    home,
     iTCal,
     inactiveItem,
     mca,
     mail,
     minus,
     pdf,
+    parties,
     payment,
     plus,
     privacyPolicy,
@@ -266,6 +293,7 @@ class $AssetsIconsGen {
     addItem,
     balanceSheet,
     bill,
+    blogs,
     calculator,
     calendar,
     camera,
@@ -284,21 +312,25 @@ class $AssetsIconsGen {
     inactiveCustomer,
     incomeTax,
     invoice,
+    items1,
     itr,
     ixUserProfileFilled,
     logout,
     materialSymbolsCancel,
     materialSymbolsDownload,
     materialSymbolsShare,
+    more,
     ocr,
     payables,
     postOffice1,
     profitLoss,
     purchase,
     receipt,
+    reports1,
     sales,
     salesOrder1,
     scan,
+    services,
     settings,
     sortBy1,
     startup,
