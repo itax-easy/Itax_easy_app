@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:itax_easy_app/testScreen2.dart';
-import 'package:itax_easy_app/widgets/buttons/custom_clear_calculate_button.dart';
-import 'package:itax_easy_app/widgets/custom/custom_toolbar.dart';
-import 'package:itax_easy_app/widgets/drop_down/select_time_dropdown.dart';
-import 'package:itax_easy_app/widgets/inputs/CustomTextField.dart';
+import 'package:itax_easy_app/views/widgets/buttons/custom_clear_calculate_button.dart';
+import 'package:itax_easy_app/views/widgets/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/views/widgets/drop_down/select_time_dropdown.dart';
+import 'package:itax_easy_app/views/widgets/inputs/CustomTextField.dart';
 
 class SimpleInterestCalculatorScreen extends StatefulWidget {
   const SimpleInterestCalculatorScreen({super.key});
