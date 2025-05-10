@@ -3,8 +3,8 @@ import 'package:itax_easy_app/viewss/screenss/blogs_screen.dart';
 import 'package:itax_easy_app/viewss/screenss/home_screen.dart';
 import 'package:itax_easy_app/viewss/screenss/more_screen.dart';
 import 'package:itax_easy_app/viewss/screenss/tools_screen.dart';
-import 'package:itax_easy_app/viewss/widgets/custom/custom_nav.dart';
-import 'package:itax_easy_app/viewss/widgets/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_nav.dart';
+import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
 
 class MainScreen extends StatefulWidget {
   @override

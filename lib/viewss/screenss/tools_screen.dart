@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/viewss/screenss/calculators/bank%20calculators/simple_intrest_calculator.dart';
-import 'package:itax_easy_app/viewss/widgets/custom/calculator_card.dart';
+import 'package:itax_easy_app/utils/custom/calculator_card.dart';
 
 class ToolsScreen extends StatefulWidget {
   const ToolsScreen({

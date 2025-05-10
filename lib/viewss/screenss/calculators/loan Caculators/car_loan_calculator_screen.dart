@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/viewss/widgets/buttons/custom_clear_calculate_button.dart';
-import 'package:itax_easy_app/viewss/widgets/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
 import 'package:itax_easy_app/viewss/widgets/inputs/CustomTextField.dart';
 
 class CarLoanCalculatorScreen extends StatefulWidget {

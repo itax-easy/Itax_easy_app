@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:itax_easy_app/gen/assets.gen.dart';
-import 'package:itax_easy_app/viewss/widgets/custom/custom_nav.dart';
+import 'package:itax_easy_app/utils/constants/app_text.dart';
+import 'package:itax_easy_app/utils/custom/custom_nav.dart';
 
 class HalfPieChart extends StatefulWidget {
   HalfPieChart({super.key});
@@ -28,7 +29,7 @@ class _HalfPieChartState extends State<HalfPieChart> {
           Center(
             child: Text(
               "hello Pakistan",
-              style: TextStyle(fontFamily: "Poppins", fontSize: 32),
+              style: AppTextStyles.small14.copyWith(color: Colors.white),
             ),
           ),
           Center(child: SvgPicture.asset(Assets.icons.calculator)),

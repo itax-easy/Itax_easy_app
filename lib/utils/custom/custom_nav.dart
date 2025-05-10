@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:itax_easy_app/gen/assets.gen.dart';
+import 'package:itax_easy_app/utils/constants/app_colors.dart';
 
 class CustomNavbar extends StatelessWidget {
   final int selectedIndex;
@@ -16,7 +17,7 @@ class CustomNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20), // Circular border on top-left
           topRight: Radius.circular(20), // Circular border on top-right
@@ -38,8 +39,7 @@ class CustomNavbar extends StatelessWidget {
           currentIndex: selectedIndex,
           onTap: onItemTapped,
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Colors.white,
-
+          backgroundColor: AppColors.white,
           iconSize: 30, // Increase icon size
           selectedFontSize: 16, // Adjust font size for selected label
           unselectedFontSize: 12, // Adjust font size for unselected label
@@ -51,8 +51,8 @@ class CustomNavbar extends StatelessWidget {
                 Assets.icons.home,
                 color:
                     selectedIndex == 0
-                        ? const Color(0xFF3C7CDD)
-                        : const Color(0xFF8E8E93),
+                        ? AppColors.primary
+                        : AppColors.secondary,
               ),
               label: 'Home',
             ),
@@ -61,8 +61,8 @@ class CustomNavbar extends StatelessWidget {
                 Assets.icons.services,
                 color:
                     selectedIndex == 1
-                        ? const Color(0xFF3C7CDD)
-                        : const Color(0xFF8E8E93),
+                        ? AppColors.primary
+                        : AppColors.secondary,
               ),
               label: 'Tools',
             ),
@@ -71,8 +71,8 @@ class CustomNavbar extends StatelessWidget {
                 Assets.icons.blogs,
                 color:
                     selectedIndex == 2
-                        ? const Color(0xFF3C7CDD)
-                        : const Color(0xFF8E8E93),
+                        ? AppColors.primary
+                        : AppColors.secondary,
               ),
               label: 'Blogs',
             ),
@@ -81,8 +81,8 @@ class CustomNavbar extends StatelessWidget {
                 Assets.icons.blogs,
                 color:
                     selectedIndex == 3
-                        ? const Color(0xFF3C7CDD)
-                        : const Color(0xFF8E8E93),
+                        ? AppColors.primary
+                        : AppColors.secondary,
               ),
               label: 'More',
             ),
