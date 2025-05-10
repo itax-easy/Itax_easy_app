@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/viewss/widgets/buttons/custom_clear_calculate_button.dart';
-import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 import 'package:itax_easy_app/viewss/widgets/drop_down/select_status_dropdown.dart';
 import 'package:itax_easy_app/viewss/widgets/drop_down/tax_payer_dropdown.dart';
 import 'package:itax_easy_app/viewss/widgets/inputs/CustomTextField.dart';
@@ -16,7 +16,7 @@ class _TaxCalculatorScreenState extends State<TaxCalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomToolbar(title: 'Tax Calculator'),
+      appBar: CustomAppBar(title: 'Tax Calculator'),
       body: Column(
         children: [
           Expanded(

@@ -12,9 +12,12 @@ class AppColors {
 
   // Gradients
   static const LinearGradient blueToGreenGradient = LinearGradient(
-    begin: Alignment(0.50, 0.11),
-    end: Alignment(0.50, 1.00),
-    colors: [Color(0xFF3C7CDD), Color(0xFF43CEA2)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Color(0xFF3C7CDD), // Start color
+      Color(0xFF43CEA2), // End color
+    ],
   );
 
   static const LinearGradient redGradient = LinearGradient(

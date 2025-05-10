@@ -4,7 +4,7 @@ import 'package:itax_easy_app/viewss/screenss/home_screen.dart';
 import 'package:itax_easy_app/viewss/screenss/more_screen.dart';
 import 'package:itax_easy_app/viewss/screenss/tools_screen.dart';
 import 'package:itax_easy_app/utils/custom/custom_nav.dart';
-import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -47,7 +47,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomToolbar(title: _titles[_selectedIndex]),
+      appBar: CustomAppBar(title: _titles[_selectedIndex]),
       body: Stack(
         children: [
           _buildOffstageNavigator(0, const HomeScreen()),

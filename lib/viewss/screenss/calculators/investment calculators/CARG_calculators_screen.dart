@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/viewss/widgets/buttons/custom_clear_calculate_button.dart';
-import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 import 'package:itax_easy_app/viewss/widgets/inputs/CustomTextField.dart';
 
 class CARGCalculatorsScreen extends StatefulWidget {
@@ -14,7 +14,7 @@ class _CARGCalculatorsScreenState extends State<CARGCalculatorsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomToolbar(title: 'CARG Calculator'),
+      appBar: CustomAppBar(title: 'CARG Calculator'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

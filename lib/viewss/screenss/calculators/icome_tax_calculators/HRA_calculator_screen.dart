@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/viewss/widgets/buttons/custom_clear_calculate_button.dart';
-import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 import 'package:itax_easy_app/viewss/widgets/inputs/CustomTextField.dart';
 
 class HraCalculatorScreen extends StatefulWidget {
@@ -14,7 +14,7 @@ class _HraCalculatorScreenState extends State<HraCalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomToolbar(title: 'HRA Calculator'),
+      appBar: CustomAppBar(title: 'HRA Calculator'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

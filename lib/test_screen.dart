@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:itax_easy_app/gen/assets.gen.dart';
 import 'package:itax_easy_app/utils/constants/app_text.dart';
+import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 import 'package:itax_easy_app/utils/custom/custom_nav.dart';
 
 class HalfPieChart extends StatefulWidget {
@@ -22,6 +23,12 @@ class _HalfPieChartState extends State<HalfPieChart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(
+        title: 'AppBar',
+        onBack: () => Navigator.pop(context),
+        onDownload: () {},
+        onShare: () {},
+      ),
       backgroundColor: Colors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

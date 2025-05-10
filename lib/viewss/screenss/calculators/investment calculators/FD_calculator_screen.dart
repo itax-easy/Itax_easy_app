@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:itax_easy_app/viewss/widgets/buttons/custom_clear_calculate_button.dart';
-import 'package:itax_easy_app/utils/custom/custom_toolbar.dart';
+import 'package:itax_easy_app/utils/custom/custom_appbar.dart';
 import 'package:itax_easy_app/viewss/widgets/drop_down/select_time_dropdown.dart';
 import 'package:itax_easy_app/viewss/widgets/inputs/CustomTextField.dart';
 
@@ -15,7 +15,7 @@ class _FDCalculatorScreenState extends State<FDCalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomToolbar(title: 'Fixed Deposit Calculator'),
+      appBar: CustomAppBar(title: 'Fixed Deposit Calculator'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
