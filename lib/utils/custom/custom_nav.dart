@@ -8,10 +8,10 @@ class CustomNavbar extends StatelessWidget {
   final ValueChanged<int> onItemTapped;
 
   const CustomNavbar({
-    Key? key,
+    super.key,
     required this.selectedIndex,
     required this.onItemTapped,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +40,7 @@ class CustomNavbar extends StatelessWidget {
           onTap: onItemTapped,
           type: BottomNavigationBarType.fixed,
           backgroundColor: AppColors.white,
+          selectedItemColor: AppColors.primary,
           iconSize: 30, // Increase icon size
           selectedFontSize: 16, // Adjust font size for selected label
           unselectedFontSize: 12, // Adjust font size for unselected label
@@ -78,7 +79,7 @@ class CustomNavbar extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
-                Assets.icons.blogs,
+                Assets.icons.more,
                 color:
                     selectedIndex == 3
                         ? AppColors.primary
